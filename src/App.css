@@ -52,3 +52,15 @@ body {
   width: 100%;
   margin-top: 15px;
 }
+
+.Post__delete {
+  border: none;
+  background: none;
+  padding: 0px;
+  float: right;
+  cursor: pointer;
+}
+
+.Post__delete:focus {
+  outline:none;
+}
