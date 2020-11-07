@@ -2,6 +2,7 @@ import "./App.css";
 import React, {useState} from 'react';
 import Navbar from './Navbar';
 import Input from './Input';
+import Post from './Post';
 
 let id = 1;
 function App() {
@@ -14,6 +15,7 @@ function App() {
   return (<div className="App">
     <Navbar/>
     <Input addPost = {addPost}/>
+    {posts.map((post) => <Post key= {post.id} id={post.id} title = {post.title}/>)}
   </div>);
 }
 
